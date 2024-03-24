@@ -1,26 +1,26 @@
-public class PersegiPanjang {
-    private int panjang;
+public class PersegiPanjang { //deklarasi kelas
+    private int panjang; //deklarasi private (hanya bisa di akses dalam kelas Persegi panjang)
     private int lebar;
 
-    public PersegiPanjang() {
+    public PersegiPanjang() { //membuat default constructor dengan nilai 1
         this.panjang = 1;
         this.lebar = 1;
     }
 
-    public PersegiPanjang(int panjangBaru, int lebarBaru) {
+    public PersegiPanjang(int panjangBaru, int lebarBaru) { //untuk menerima konstruktor
         this.panjang = panjangBaru;
         this.lebar = lebarBaru;
     }
 
-    public int getLuas() {
+    public int getLuas() { //mengembalikan nilai luas persegi panjang
         return panjang * lebar;
     }
 
-    public int getKeliling() {
+    public int getKeliling() { //mengembalikan nilai keliling persegi panjang
         return 2 * (panjang + lebar);
     }
 
-    public void setPanjang(int panjangBaru) {
+    public void setPanjang(int panjangBaru) { //untuk memodifikasi panjang/lebar
         this.panjang = panjangBaru;
     }
 
@@ -28,7 +28,7 @@ public class PersegiPanjang {
         this.lebar = lebarBaru;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //menciptakan objek kelas PersegiPanjang
         PersegiPanjang persegiPanjang1 = new PersegiPanjang();
 
         PersegiPanjang persegiPanjang2 = new PersegiPanjang(30, 40);
